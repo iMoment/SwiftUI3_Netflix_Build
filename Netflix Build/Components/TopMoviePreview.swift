@@ -37,6 +37,7 @@ struct TopMoviePreview: View {
                         
                         HStack {
                             Text(category)
+                                .font(.footnote)
                             
                             if !isLastCategory(category) {
                                 Image(systemName: "circle.fill")
@@ -46,7 +47,12 @@ struct TopMoviePreview: View {
                         }
                     }
                 }
-                Text("Row of buttons")
+                
+                HStack {
+                    Text("My List")
+                    Text("Play Button")
+                    Text("Info Button")
+                }
             }
         }
         .foregroundColor(.white)
