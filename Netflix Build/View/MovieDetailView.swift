@@ -36,6 +36,18 @@ struct MovieDetailView: View {
                             .frame(width: screen.width / 2.5)
                         
                         MovieInfoSubheadline(movie: movie)
+                        
+                        Text("Watch Season 3 Now")
+                        
+                        if movie.promotionHeadline != nil {
+                            Text(movie.promotionHeadline!)
+                                .bold()
+                                .font(.headline)
+                        } else {
+                            Text("Watch Now")
+                                .bold()
+                                .font(.headline)
+                        }
                     }
                 }
                 
@@ -48,7 +60,7 @@ struct MovieDetailView: View {
 
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailView(movie: exampleMovie6)
+        MovieDetailView(movie: exampleMovie5)
     }
 }
 
@@ -56,17 +68,61 @@ struct MovieInfoSubheadline: View {
     var movie: Movie
     
     var body: some View {
-        HStack {
+        HStack(spacing: 10) {
             Image(systemName: "hand.thumbsup.fill")
                 .foregroundColor(.white)
             
-            Text("MOVIE YEAR")
+            Text(String(movie.year))
             
-            Text("RATING")
+            RatingView(rating: movie.rating)
             
-            Text("Seasons")
+            Text(movie.numberOfSeasonsDisplay)
+            
+            HDView()
         }
         .foregroundColor(.gray)
         .padding(.vertical, 6)
+    }
+}
+
+struct RatingView: View {
+    var rating: String
+    
+    var body: some View {
+        ZStack {
+            Rectangle()
+                .foregroundColor(Color(red: 57/255, green: 59/255, blue: 63/255))
+                .cornerRadius(2.0)
+            
+            Text(rating)
+                .foregroundColor(.white)
+                .font(.system(size: 12))
+                .bold()
+        }
+        .frame(width: 54, height: 26)
+    }
+}
+
+struct HDView: View {
+    
+    var body: some View {
+        ZStack {
+            Rectangle()
+                .foregroundColor(.gray)
+                .cornerRadius(2.0)
+            
+            Rectangle()
+                .foregroundColor((Color(red: 37/255, green: 39/255, blue: 43/255)))
+                .frame(width: 30, height: 22)
+                .cornerRadius(2.0)
+                
+            
+            Text("HD")
+                .foregroundColor(.white)
+                .font(.system(size: 14))
+                .bold()
+                
+        }
+        .frame(width: 34, height: 26)
     }
 }
