@@ -68,6 +68,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9144ECB7277589A5003F8E71 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				918A1676277574090096FE41 /* VideoViewer.swift */,
+				918A1678277575FF0096FE41 /* VideoPreviewImage.swift */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		9144ECB8277589EB003F8E71 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				9156F9082773BCDC007E84DE /* HomeView.swift */,
+				9156F9132773C3B8007E84DE /* HomeVM.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		9144ECB927758A0A003F8E71 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				918A166C27752B800096FE41 /* MovieDetailView.swift */,
+				918A16702775535F0096FE41 /* CustomTabSwitcher.swift */,
+				918A1672277566080096FE41 /* MoreLikeThis.swift */,
+				918A167A277579180096FE41 /* TrailerList.swift */,
+				9144ECB527758515003F8E71 /* EpisodesView.swift */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
 		9156F8EE2773B960007E84DE = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +121,9 @@
 				9156F8FC2773B960007E84DE /* ContentView.swift */,
 				9156F8FE2773B961007E84DE /* Assets.xcassets */,
 				9156F9162773C4F9007E84DE /* Model */,
-				9156F9192773D390007E84DE /* View */,
-				9156F9152773C4E3007E84DE /* ViewModel */,
+				9144ECB8277589EB003F8E71 /* HomeViews */,
+				9144ECB927758A0A003F8E71 /* MovieDetail */,
+				9144ECB7277589A5003F8E71 /* VideoPlayer */,
 				9156F91A2773D3B9007E84DE /* Components */,
 				918A166B27752AFA0096FE41 /* Helpers */,
 				9156F9002773B961007E84DE /* Preview Content */,
@@ -108,14 +139,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9156F9152773C4E3007E84DE /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				9156F9132773C3B8007E84DE /* HomeVM.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		9156F9162773C4F9007E84DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,15 +149,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		9156F9192773D390007E84DE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9156F9082773BCDC007E84DE /* HomeView.swift */,
-				918A166C27752B800096FE41 /* MovieDetailView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		9156F91A2773D3B9007E84DE /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,12 +156,6 @@
 				9156F9172773D384007E84DE /* TopMoviePreview.swift */,
 				9156F91B2773DEE0007E84DE /* SmallVerticalButton.swift */,
 				9156F91D2773E4AF007E84DE /* PlayButton.swift */,
-				918A16702775535F0096FE41 /* CustomTabSwitcher.swift */,
-				918A1672277566080096FE41 /* MoreLikeThis.swift */,
-				918A1676277574090096FE41 /* VideoViewer.swift */,
-				918A1678277575FF0096FE41 /* VideoPreviewImage.swift */,
-				918A167A277579180096FE41 /* TrailerList.swift */,
-				9144ECB527758515003F8E71 /* EpisodesView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
