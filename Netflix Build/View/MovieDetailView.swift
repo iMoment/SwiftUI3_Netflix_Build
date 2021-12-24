@@ -37,8 +37,6 @@ struct MovieDetailView: View {
                         
                         MovieInfoSubheadline(movie: movie)
                         
-                        Text("Watch Season 3 Now")
-                        
                         if movie.promotionHeadline != nil {
                             Text(movie.promotionHeadline!)
                                 .bold()
@@ -48,7 +46,17 @@ struct MovieDetailView: View {
                                 .bold()
                                 .font(.headline)
                         }
+                        
+                        PlayButton(text: "Play", imageName: "play.fill", backgroundColor: .red) {
+                            // TODO: Action
+                        }
+                        
+                        // MARK: Current Episode Information
+                        CurrentEpisodeInformation(movie: movie)
+                        
+                        CastInfo(movie: movie)
                     }
+                    .padding(.horizontal, 10)
                 }
                 
                 Spacer()
@@ -113,7 +121,7 @@ struct HDView: View {
             
             Rectangle()
                 .foregroundColor((Color(red: 37/255, green: 39/255, blue: 43/255)))
-                .frame(width: 30, height: 22)
+                .frame(width: 28, height: 20)
                 .cornerRadius(2.0)
                 
             
@@ -123,6 +131,52 @@ struct HDView: View {
                 .bold()
                 
         }
-        .frame(width: 34, height: 26)
+        .frame(width: 32, height: 24)
+    }
+}
+
+struct CastInfo: View {
+    var movie: Movie
+    
+    var body: some View {
+        VStack(spacing: 3) {
+            HStack {
+                Text("Cast: \(movie.cast)")
+                
+                Spacer()
+            }
+            
+            HStack {
+                Text("Creators: \(movie.creators)")
+                
+                Spacer()
+            }
+        }
+        .font(.caption)
+        .foregroundColor(.gray)
+        .padding(.vertical, 6)
+    }
+}
+
+struct CurrentEpisodeInformation: View {
+    var movie: Movie
+    
+    var body: some View {
+        Group {
+            HStack {
+                Text(movie.episodeInfoDisplay)
+                    .bold()
+                
+                Spacer()
+            }
+            .padding(.vertical, 4)
+            
+            HStack {
+                Text(movie.episodeDescriptionDisplay)
+                    .font(.subheadline)
+                
+                Spacer()
+            }
+        }
     }
 }
