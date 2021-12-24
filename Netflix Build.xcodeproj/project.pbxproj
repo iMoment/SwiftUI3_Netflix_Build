@@ -152,10 +152,10 @@
 		9156F91A2773D3B9007E84DE /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9156F90F2773C0F5007E84DE /* StandardHomeMovie.swift */,
 				9156F9172773D384007E84DE /* TopMoviePreview.swift */,
-				9156F91B2773DEE0007E84DE /* SmallVerticalButton.swift */,
 				9156F91D2773E4AF007E84DE /* PlayButton.swift */,
+				9156F91B2773DEE0007E84DE /* SmallVerticalButton.swift */,
+				9156F90F2773C0F5007E84DE /* StandardHomeMovie.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";

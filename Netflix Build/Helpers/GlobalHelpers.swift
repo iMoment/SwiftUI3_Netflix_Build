@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-let exampleVideoURL = URL(string: "https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4")!
+let exampleVideoURL = URL(string: "https://www.rmp-streaming.com/media/big-buck-bunny-360p.mp4")!
 
 let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
 let exampleImageURL2 = URL(string: "https://picsum.photos/300/105")!
@@ -29,21 +29,21 @@ let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
 let episode1 = Episode(name: "Beginnings and Endings",
                        season: 1,
                        episodeNumber: 1,
-                       thumbnailImageURLString: "ttps://picsum.photos/300/102",
+                       thumbnailImageURLString: "https://picsum.photos/300/102",
                        description: "Six months after the disappearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.",
                        length: 53,
                        videoURL: exampleVideoURL)
 let episode2 = Episode(name: "Dark Matter",
                        season: 1,
                        episodeNumber: 2,
-                       thumbnailImageURLString: "ttps://picsum.photos/300/103",
+                       thumbnailImageURLString: "https://picsum.photos/300/103",
                        description: "Clausen and Charlotte interview Regina. The Stranger takes Hannah to 1987, where Claudia has an unnerving encounter and Egon visits an old nemesis.",
                        length: 54,
                        videoURL: exampleVideoURL)
 let episode3 = Episode(name: "Ghosts",
                        season: 1,
                        episodeNumber: 3,
-                       thumbnailImageURLString: "ttps://picsum.photos/300/104",
+                       thumbnailImageURLString: "https://picsum.photos/300/104",
                        description: "In 1954, a missing Helge returns, but he'll only speak to Noah. In 1987, Claudia brings the time machine to Tannhaus, and Egon questions Ulrich again.",
                        length: 56,
                        videoURL: exampleVideoURL)
@@ -51,21 +51,21 @@ let episode3 = Episode(name: "Ghosts",
 let episode4 = Episode(name: "Beginnings and Endings",
                        season: 2,
                        episodeNumber: 1,
-                       thumbnailImageURLString: "ttps://picsum.photos/300/105",
+                       thumbnailImageURLString: "https://picsum.photos/300/105",
                        description: "Six months after the disappearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.",
                        length: 53,
                        videoURL: exampleVideoURL)
 let episode5 = Episode(name: "Dark Matter",
                        season: 2,
                        episodeNumber: 2,
-                       thumbnailImageURLString: "ttps://picsum.photos/300/106",
+                       thumbnailImageURLString: "https://picsum.photos/300/106",
                        description: "Clausen and Charlotte interview Regina. The Stranger takes Hannah to 1987, where Claudia has an unnerving encounter and Egon visits an old nemesis.",
                        length: 54,
                        videoURL: exampleVideoURL)
 let episode6 = Episode(name: "Ghosts",
                        season: 2,
                        episodeNumber: 3,
-                       thumbnailImageURLString: "ttps://picsum.photos/300/107",
+                       thumbnailImageURLString: "https://picsum.photos/300/107",
                        description: "In 1954, a missing Helge returns, but he'll only speak to Noah. In 1987, Claudia brings the time machine to Tannhaus, and Egon questions Ulrich again.",
                        length: 56,
                        videoURL: exampleVideoURL)

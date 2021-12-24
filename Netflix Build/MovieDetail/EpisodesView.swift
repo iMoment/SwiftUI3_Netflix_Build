@@ -21,7 +21,6 @@ struct EpisodesView: View {
             // Season Picker
             HStack {
                 Button(action: {
-                    // TODO: action
                     isShowingSeasonPicker = true
                 }, label: {
                     Group {
