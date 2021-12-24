@@ -29,6 +29,7 @@
 		918A1677277574090096FE41 /* VideoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A1676277574090096FE41 /* VideoViewer.swift */; };
 		918A1679277575FF0096FE41 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A1678277575FF0096FE41 /* VideoPreviewImage.swift */; };
 		918A167B277579180096FE41 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A167A277579180096FE41 /* TrailerList.swift */; };
+		91FE485527763E410089C522 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE485427763E410089C522 /* HomeStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		918A1676277574090096FE41 /* VideoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewer.swift; sourceTree = "<group>"; };
 		918A1678277575FF0096FE41 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		918A167A277579180096FE41 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
+		91FE485427763E410089C522 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				9156F9082773BCDC007E84DE /* HomeView.swift */,
+				91FE485427763E410089C522 /* HomeStack.swift */,
 				9156F9132773C3B8007E84DE /* HomeVM.swift */,
 			);
 			path = HomeViews;
@@ -257,6 +260,7 @@
 				9156F90E2773C093007E84DE /* Movie.swift in Sources */,
 				9156F8FB2773B960007E84DE /* Netflix_BuildApp.swift in Sources */,
 				918A1673277566080096FE41 /* MoreLikeThis.swift in Sources */,
+				91FE485527763E410089C522 /* HomeStack.swift in Sources */,
 				918A16712775535F0096FE41 /* CustomTabSwitcher.swift in Sources */,
 				918A167B277579180096FE41 /* TrailerList.swift in Sources */,
 				918A1677277574090096FE41 /* VideoViewer.swift in Sources */,
