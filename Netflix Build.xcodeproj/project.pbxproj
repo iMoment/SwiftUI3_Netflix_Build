@@ -22,6 +22,7 @@
 		9156F91E2773E4AF007E84DE /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156F91D2773E4AF007E84DE /* PlayButton.swift */; };
 		918A166D27752B800096FE41 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A166C27752B800096FE41 /* MovieDetailView.swift */; };
 		918A166F277530970096FE41 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A166E277530970096FE41 /* Episode.swift */; };
+		918A16712775535F0096FE41 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A16702775535F0096FE41 /* CustomTabSwitcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9156F91D2773E4AF007E84DE /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		918A166C27752B800096FE41 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		918A166E277530970096FE41 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		918A16702775535F0096FE41 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				9156F9172773D384007E84DE /* TopMoviePreview.swift */,
 				9156F91B2773DEE0007E84DE /* SmallVerticalButton.swift */,
 				9156F91D2773E4AF007E84DE /* PlayButton.swift */,
+				918A16702775535F0096FE41 /* CustomTabSwitcher.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				9156F9182773D384007E84DE /* TopMoviePreview.swift in Sources */,
 				9156F90E2773C093007E84DE /* Movie.swift in Sources */,
 				9156F8FB2773B960007E84DE /* Netflix_BuildApp.swift in Sources */,
+				918A16712775535F0096FE41 /* CustomTabSwitcher.swift in Sources */,
 				9156F91C2773DEE0007E84DE /* SmallVerticalButton.swift in Sources */,
 				9156F91E2773E4AF007E84DE /* PlayButton.swift in Sources */,
 				918A166D27752B800096FE41 /* MovieDetailView.swift in Sources */,

@@ -55,6 +55,27 @@ struct MovieDetailView: View {
                         CurrentEpisodeInformation(movie: movie)
                         
                         CastInfo(movie: movie)
+                        
+                        HStack(spacing: 60) {
+                            SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                                // TODO: action
+                            }
+                            
+                            SmallVerticalButton(text: "Rate", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: true) {
+                                // TODO: action
+                            }
+                            
+                            SmallVerticalButton(text: "Share", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true) {
+                                // TODO: action
+                            }
+                            
+                            Spacer()
+                        }
+                        .padding(.leading, 20)
+                        
+                        // MARK: Picker + conditional render of views
+//                        CustomTabSwitcher()
+                        
                     }
                     .padding(.horizontal, 10)
                 }
