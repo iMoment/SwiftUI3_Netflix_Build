@@ -67,7 +67,7 @@ struct EpisodesView: View {
             Spacer()
         }
         .foregroundColor(.white)
-        .padding(.horizontal, 20)
+//        .padding(.horizontal, 0)
     }
 }
 
