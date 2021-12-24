@@ -24,6 +24,10 @@
 		918A166F277530970096FE41 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A166E277530970096FE41 /* Episode.swift */; };
 		918A16712775535F0096FE41 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A16702775535F0096FE41 /* CustomTabSwitcher.swift */; };
 		918A1673277566080096FE41 /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A1672277566080096FE41 /* MoreLikeThis.swift */; };
+		918A16752775738B0096FE41 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A16742775738B0096FE41 /* Trailer.swift */; };
+		918A1677277574090096FE41 /* VideoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A1676277574090096FE41 /* VideoViewer.swift */; };
+		918A1679277575FF0096FE41 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A1678277575FF0096FE41 /* VideoPreviewImage.swift */; };
+		918A167B277579180096FE41 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A167A277579180096FE41 /* TrailerList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		918A166E277530970096FE41 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		918A16702775535F0096FE41 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		918A1672277566080096FE41 /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
+		918A16742775738B0096FE41 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
+		918A1676277574090096FE41 /* VideoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewer.swift; sourceTree = "<group>"; };
+		918A1678277575FF0096FE41 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
+		918A167A277579180096FE41 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,7 @@
 			children = (
 				9156F90D2773C093007E84DE /* Movie.swift */,
 				918A166E277530970096FE41 /* Episode.swift */,
+				918A16742775738B0096FE41 /* Trailer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,6 +142,9 @@
 				9156F91D2773E4AF007E84DE /* PlayButton.swift */,
 				918A16702775535F0096FE41 /* CustomTabSwitcher.swift */,
 				918A1672277566080096FE41 /* MoreLikeThis.swift */,
+				918A1676277574090096FE41 /* VideoViewer.swift */,
+				918A1678277575FF0096FE41 /* VideoPreviewImage.swift */,
+				918A167A277579180096FE41 /* TrailerList.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -222,9 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9156F9122773C130007E84DE /* GlobalHelpers.swift in Sources */,
+				918A16752775738B0096FE41 /* Trailer.swift in Sources */,
 				918A166F277530970096FE41 /* Episode.swift in Sources */,
 				9156F9092773BCDC007E84DE /* HomeView.swift in Sources */,
 				9156F9142773C3B8007E84DE /* HomeVM.swift in Sources */,
+				918A1679277575FF0096FE41 /* VideoPreviewImage.swift in Sources */,
 				9156F8FD2773B960007E84DE /* ContentView.swift in Sources */,
 				9156F9102773C0F5007E84DE /* StandardHomeMovie.swift in Sources */,
 				9156F9182773D384007E84DE /* TopMoviePreview.swift in Sources */,
@@ -232,6 +246,8 @@
 				9156F8FB2773B960007E84DE /* Netflix_BuildApp.swift in Sources */,
 				918A1673277566080096FE41 /* MoreLikeThis.swift in Sources */,
 				918A16712775535F0096FE41 /* CustomTabSwitcher.swift in Sources */,
+				918A167B277579180096FE41 /* TrailerList.swift in Sources */,
+				918A1677277574090096FE41 /* VideoViewer.swift in Sources */,
 				9156F91C2773DEE0007E84DE /* SmallVerticalButton.swift in Sources */,
 				9156F91E2773E4AF007E84DE /* PlayButton.swift in Sources */,
 				918A166D27752B800096FE41 /* MovieDetailView.swift in Sources */,
