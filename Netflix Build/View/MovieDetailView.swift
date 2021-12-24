@@ -12,6 +12,9 @@ struct MovieDetailView: View {
     
     let screen = UIScreen.main.bounds
     
+    @State private var isShowingSeasonPicker = false
+    @State private var selectedSeason = 1
+    
     var body: some View {
         ZStack {
             Color.black
