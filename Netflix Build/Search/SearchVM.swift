@@ -40,11 +40,11 @@ class SearchVM: ObservableObject {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             if haveResult == 0 {
-                // empty view
+                // MARK: Empty view if search result ends up being empty
                 self.searchResults = []
                 self.setViewState(to: .empty)
             } else {
-                // ready view
+                // MARK: View if search result is populated
                 let movies = generateMovies(21)
                 self.searchResults = movies
                 self.setViewState(to: .ready)

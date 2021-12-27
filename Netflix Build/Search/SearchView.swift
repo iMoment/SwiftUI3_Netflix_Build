@@ -13,17 +13,38 @@ struct SearchView: View {
     @State private var searchText = ""
     
     var body: some View {
-        ZStack {
+        // MARK: custom binding
+        let searchTextBinding = Binding {
+            return searchText
+        } set: {
+            searchText = $0
+            vm.updateSearchText(with: $0)
+        }
+        
+        return ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                SearchBar(searchText: $searchText, isLoading: $vm.isLoading)
+                SearchBar(searchText: searchTextBinding, isLoading: $vm.isLoading)
                     .padding()
+                
+                ScrollView {
+                    if vm.isShowingPopularMovies {
+                        Text("Show Popular Movies")
+                    }
+                    
+                    if vm.viewState == .empty {
+                        Text("Empty")
+                    } else if vm.viewState == .ready && !vm.isShowingPopularMovies {
+                        Text("Show Search Results")
+                    }
+                }
                 
                 Spacer()
             }
         }
+        .foregroundColor(.white)
     }
 }
 
