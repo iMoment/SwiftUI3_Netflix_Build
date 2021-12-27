@@ -29,7 +29,7 @@ struct SearchBar: View {
                     .foregroundColor(.white)
                 
                 Button(action: {
-                    // TODO: clear text
+                    // TODO: clear text, test commit
                 }, label: {
                     Image(systemName: "xmark.circle.fill")
                         .foregroundColor(.graySearchText)
