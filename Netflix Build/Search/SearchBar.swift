@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct SearchBar: View {
-    @State private var searchText: String = ""
+    @Binding var searchText: String
+    @State private var isEditing: Bool = true
+    @Binding var isLoading: Bool
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -27,23 +29,45 @@ struct SearchBar: View {
                     .background(Color.graySearchBackground)
                     .cornerRadius(8)
                     .foregroundColor(.white)
+                    .onTapGesture {
+                        isEditing = true
+                    }
                 
-                Button(action: {
-                    // TODO: clear text, test commit
-                }, label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.graySearchText)
+                if !searchText.isEmpty {
+                    if isLoading {
+                        Button(action: {
+                            searchText = ""
+                        }, label: {
+                            ActivityIndicator(style: .medium, animate: .constant(true))
+                                .configure {
+                                    $0.color = .white
+                                }
+                        })
+                        .padding(.trailing, 32)
                         .frame(width: 35, height: 35)
-                })
-                .padding(.trailing, 18)
+                    } else {
+                        Button(action: {
+                            searchText = ""
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.graySearchText)
+                                .frame(width: 35, height: 35)
+                        })
+                        .padding(.trailing, 18)
+                    }
+                }
                 
-                Button(action: {
-                    // TODO: clear text, hide both buttons, give up first-responder
-                }, label: {
-                    Text("Cancel")
-                        .foregroundColor(.white)
-                })
-                .padding(.trailing, 10)
+                if isEditing {
+                    Button(action: {
+                        searchText = ""
+                        isEditing = false
+                        hideKeyboard()
+                    }, label: {
+                        Text("Cancel")
+                            .foregroundColor(.white)
+                    })
+                    .padding(.trailing, 10)
+                }
             }
         }
     }
@@ -55,7 +79,7 @@ struct SearchBar_Previews: PreviewProvider {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             
-            SearchBar()
+            SearchBar(searchText: .constant(""), isLoading: .constant(false))
                 .padding()
         }
     }

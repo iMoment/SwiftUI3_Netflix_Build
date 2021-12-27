@@ -31,6 +31,7 @@
 		918A167B277579180096FE41 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918A167A277579180096FE41 /* TrailerList.swift */; };
 		91C1CB93277A616C00F99866 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1CB92277A616C00F99866 /* SearchBar.swift */; };
 		91C1CB95277A632000F99866 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1CB94277A632000F99866 /* Colors.swift */; };
+		91C1CB97277A69FC00F99866 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1CB96277A69FC00F99866 /* ActivityIndicator.swift */; };
 		91FE485527763E410089C522 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE485427763E410089C522 /* HomeStack.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		918A167A277579180096FE41 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
 		91C1CB92277A616C00F99866 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		91C1CB94277A632000F99866 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		91C1CB96277A69FC00F99866 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		91FE485427763E410089C522 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +175,7 @@
 			children = (
 				9156F9112773C130007E84DE /* GlobalHelpers.swift */,
 				91C1CB94277A632000F99866 /* Colors.swift */,
+				91C1CB96277A69FC00F99866 /* ActivityIndicator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				9156F9102773C0F5007E84DE /* StandardHomeMovie.swift in Sources */,
 				9156F9182773D384007E84DE /* TopMoviePreview.swift in Sources */,
 				9156F90E2773C093007E84DE /* Movie.swift in Sources */,
+				91C1CB97277A69FC00F99866 /* ActivityIndicator.swift in Sources */,
 				9156F8FB2773B960007E84DE /* Netflix_BuildApp.swift in Sources */,
 				918A1673277566080096FE41 /* MoreLikeThis.swift in Sources */,
 				91FE485527763E410089C522 /* HomeStack.swift in Sources */,
