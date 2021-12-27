@@ -27,7 +27,6 @@ struct MovieDetailView: View {
                         Spacer()
                         
                         Button {
-                            // TODO: Close this view
                             movieDetailToShow = nil
                         } label: {
                             Image(systemName: "xmark.circle")

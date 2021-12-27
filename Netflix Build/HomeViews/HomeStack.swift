@@ -31,7 +31,9 @@ struct HomeStack: View {
                                 .frame(width: 100, height: 200)
                                 .padding(.horizontal, 20)
                                 .onTapGesture(perform: {
-                                    movieDetailToShow = movie
+                                    withAnimation(Animation.easeIn(duration: 0.2)) {
+                                        movieDetailToShow = movie
+                                    }
                                 })
                         }
                     }

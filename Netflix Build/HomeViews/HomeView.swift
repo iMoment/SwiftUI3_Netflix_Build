@@ -41,10 +41,8 @@ struct HomeView: View {
             }
             // MARK: MovieDetailView conditional rendering
             if movieDetailToShow != nil {
-                withAnimation {
-                    MovieDetailView(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
-                        .transition(.asymmetric(insertion: .opacity, removal: .opacity))
-                }
+                MovieDetailView(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
+                    .transition(.asymmetric(insertion: .opacity, removal: .opacity))
             }
             
             if showTopRowSelection {
