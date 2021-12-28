@@ -11,7 +11,7 @@ import Kingfisher
 struct PopularMovieView: View {
     var movie: Movie
     
-    let screen = UIScreen.main.bounds
+    @Binding var movieDetailToShow: Movie?
     
     var body: some View {
         GeometryReader { proxy in
@@ -33,6 +33,10 @@ struct PopularMovieView: View {
                 .padding(.trailing, 20)
             }
             .foregroundColor(.white)
+            .onTapGesture {
+                // MARK: might need animation here
+                self.movieDetailToShow = movie
+            }
         }
     }
 }
@@ -43,7 +47,7 @@ struct PopularMovieView_Previews: PreviewProvider {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             
-            PopularMovieView(movie: exampleMovie1)
+            PopularMovieView(movie: exampleMovie1, movieDetailToShow: .constant(nil))
                 .frame(height: 75)
         }
     }
