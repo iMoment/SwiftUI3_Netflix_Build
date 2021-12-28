@@ -11,7 +11,7 @@ struct MoreLikeThis: View {
     
     var movies: [Movie]
     
-    let columns = [
+    let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible())

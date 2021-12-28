@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SearchResultsGrid: View {
     var movies: [Movie]
+    let screen = UIScreen.main.bounds
+    
     @Binding var movieDetailToShow: Movie?
     
     let columns: [GridItem] = [
@@ -19,9 +21,11 @@ struct SearchResultsGrid: View {
     
     var body: some View {
         LazyVGrid(columns: columns, spacing: 10) {
+            
             ForEach(movies, id: \.id) { movie in
                 StandardHomeMovie(movie: movie)
-                    .frame(height: 160)
+                    .frame(width: screen.width / 3.25, height: (screen.width / 3.25) * 1.333)
+                    .clipped()
                     .onTapGesture {
                         self.movieDetailToShow = movie
                     }

@@ -47,7 +47,7 @@ struct SearchView: View {
                                     .bold()
                                     .font(.title3)
                                     .padding(.leading, 12)
-                                
+    
                                 Spacer()
                             }
                             
