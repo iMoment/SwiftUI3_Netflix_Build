@@ -12,7 +12,7 @@ struct VideoPreviewImage: View {
     var imageURL: URL
     var videoURL: URL
     
-    @State private var isShowingVideoPlayer = false
+    @State private var isShowingVideoPlayer: Bool = false
     
     var body: some View {
         ZStack {

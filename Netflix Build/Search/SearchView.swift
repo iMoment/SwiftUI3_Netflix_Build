@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SearchView: View {
-    @ObservedObject var vm = SearchVM()
+    @ObservedObject var vm: SearchVM = SearchVM()
     
-    @State private var searchText = ""
+    @State private var searchText: String = ""
     
     @State private var movieDetailToShow: Movie? = nil
     

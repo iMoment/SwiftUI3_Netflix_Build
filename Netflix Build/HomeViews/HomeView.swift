@@ -11,14 +11,14 @@ import AVFoundation
 struct HomeView: View {
     var vm: HomeVM = HomeVM()
     
-    let screen = UIScreen.main.bounds
+    let screen: CGRect = UIScreen.main.bounds
     
     @State private var movieDetailToShow: Movie? = nil
     @State private var topRowSelection: HomeTopRow = .home
     @State private var homeGenre: HomeGenre = .AllGenres
     
-    @State private var showTopRowSelection = false
-    @State private var showGenreSelection = false
+    @State private var showTopRowSelection: Bool = false
+    @State private var showGenreSelection: Bool = false
     
     var body: some View {
         ZStack {

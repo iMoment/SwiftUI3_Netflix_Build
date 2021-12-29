@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ComingSoonView: View {
-    @State private var showNotificationList = false
+    @State private var showNotificationList: Bool = false
     @State private var movieDetailToShow: Movie? = nil
-    @State private var navBarHidden = true
+    @State private var navBarHidden: BOol = true
     
     @State private var scrollOffset: CGFloat = 0.0
     @State private var activeIndex: Int = 0
     
-    @ObservedObject var vm = ComingSoonVM()
+    @ObservedObject var vm: ComingSoonVM = ComingSoonVM()
     
     func updateActiveIndex(fromScroll scroll: CGFloat) {
         if scroll < 105 {

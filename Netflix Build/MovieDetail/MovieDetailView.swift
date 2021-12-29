@@ -12,8 +12,8 @@ struct MovieDetailView: View {
     
     let screen = UIScreen.main.bounds
     
-    @State private var isShowingSeasonPicker = false
-    @State private var selectedSeason = 1
+    @State private var isShowingSeasonPicker: Bool = false
+    @State private var selectedSeason: Int = 1
     @Binding var movieDetailToShow: Movie?
     
     var body: some View {

@@ -11,7 +11,7 @@ import AVKit
 
 struct ComingSoonRow: View {
     var movie: Movie
-    let screen = UIScreen.main.bounds
+    let screen: CGRect = UIScreen.main.bounds
     
     @Binding var movieDetailToShow: Movie?
     

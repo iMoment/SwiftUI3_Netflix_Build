@@ -26,13 +26,14 @@ struct SearchBar: View {
                 TextField("Search", text: $searchText)
                     .padding(7)
                     .padding(.leading, -7)
+                    .padding(.horizontal, 10)
                     .background(Color.graySearchBackground)
                     .cornerRadius(8)
                     .foregroundColor(.white)
                     .onTapGesture {
                         isEditing = true
                     }
-                    .animation(.default)
+                    .animation(.default, value: isEditing)
                 
                 if !searchText.isEmpty {
                     if isLoading {
@@ -69,7 +70,7 @@ struct SearchBar: View {
                     })
                     .padding(.trailing, 10)
                     .transition(.move(edge: .trailing))
-                    .animation(.default)
+                    .animation(.default, value: isEditing)
                 }
             }
         }

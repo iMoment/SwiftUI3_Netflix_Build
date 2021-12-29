@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9122EF42277BE33900A3A6CE /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122EF41277BE33900A3A6CE /* DownloadsView.swift */; };
 		912FA5AF277A6FDE007632D4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA5AE277A6FDE007632D4 /* SearchView.swift */; };
 		912FA5B1277A701E007632D4 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA5B0277A701E007632D4 /* SearchVM.swift */; };
 		912FA5B3277A72A8007632D4 /* GenerateMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FA5B2277A72A8007632D4 /* GenerateMovies.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9122EF41277BE33900A3A6CE /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
 		912FA5AE277A6FDE007632D4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		912FA5B0277A701E007632D4 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
 		912FA5B2277A72A8007632D4 /* GenerateMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMovies.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9122EF43277BE55C00A3A6CE /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+				9122EF41277BE33900A3A6CE /* DownloadsView.swift */,
+			);
+			path = Downloads;
+			sourceTree = "<group>";
+		};
 		9144ECB7277589A5003F8E71 /* VideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +165,7 @@
 				9144ECB7277589A5003F8E71 /* VideoPlayer */,
 				91C1CB91277A615000F99866 /* Search */,
 				91AB4AD1277BC60C00BD9FFE /* ComingSoon */,
+				9122EF43277BE55C00A3A6CE /* Downloads */,
 				9156F91A2773D3B9007E84DE /* Components */,
 				918A166B27752AFA0096FE41 /* Helpers */,
 				9156F9002773B961007E84DE /* Preview Content */,
@@ -304,6 +315,7 @@
 			files = (
 				912FA5B5277A80BD007632D4 /* PopularMovieView.swift in Sources */,
 				91AB4AD0277BC5E500BD9FFE /* ComingSoonView.swift in Sources */,
+				9122EF42277BE33900A3A6CE /* DownloadsView.swift in Sources */,
 				9144ECB627758515003F8E71 /* EpisodesView.swift in Sources */,
 				912FA5B3277A72A8007632D4 /* GenerateMovies.swift in Sources */,
 				91AB4AD3277BC66C00BD9FFE /* NotificationBar.swift in Sources */,
