@@ -18,7 +18,7 @@ struct MovieDetailView: View {
     
     var body: some View {
         ZStack {
-            Color.black
+            Color.black.opacity(0.9)
                 .edgesIgnoringSafeArea(.all)
             
             ZStack {

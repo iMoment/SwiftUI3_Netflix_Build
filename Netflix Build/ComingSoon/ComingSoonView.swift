@@ -10,7 +10,7 @@ import SwiftUI
 struct ComingSoonView: View {
     @State private var showNotificationList: Bool = false
     @State private var movieDetailToShow: Movie? = nil
-    @State private var navBarHidden: BOol = true
+    @State private var navBarHidden: Bool = true
     
     @State private var scrollOffset: CGFloat = 0.0
     @State private var activeIndex: Int = 0
