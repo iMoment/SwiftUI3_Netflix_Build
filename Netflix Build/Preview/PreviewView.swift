@@ -10,12 +10,14 @@ import SwiftUI
 struct PreviewView: View {
     @ObservedObject var vm: PreviewVM
     
+    var shouldPlayVideo: Bool
+    
     var body: some View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             
-            TrailerPlayerView(videoURL: vm.movie.trailers.first?.videoURL, playVideo: .constant(true))
+            TrailerPlayerView(videoURL: vm.movie.trailers.first?.videoURL, playVideo: .constant(shouldPlayVideo))
             
             VStack {
                 HStack {
@@ -100,6 +102,6 @@ struct PreviewView: View {
 
 struct PreviewView_Previews: PreviewProvider {
     static var previews: some View {
-        PreviewView(vm: PreviewVM(movie: exampleMovie1))
+        PreviewView(vm: PreviewVM(movie: exampleMovie1), shouldPlayVideo: true)
     }
 }

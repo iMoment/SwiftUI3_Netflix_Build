@@ -11,9 +11,7 @@ import SwiftUI
 struct Netflix_BuildApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-//            PagerDummy()
-            PreviewView(vm: PreviewVM(movie: exampleMovie1))
+            ContentView()
         }
     }
 }
